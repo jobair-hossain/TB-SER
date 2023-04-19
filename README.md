@@ -2,8 +2,7 @@ NLP pipeline for topic-based SER
 
 In this NLP pipeline, we aim to analyze team conversations by transcribing speech to text, performing sentiment analysis, and conducting topic modeling of the conversation. The pipeline consists of several stages, each employing state-of-the-art machine learning techniques and models illustrates in the figure 1.
 
-![NLP Pipeline](https://user-images.githubusercontent.com/59045223/232633905-26db63aa-f86c-4bc4-8f7f-dd08ec5df84b.png)
-
+![NLP Pipeline Updated](https://user-images.githubusercontent.com/59045223/232947812-ee7955cb-82e1-4331-a180-f8b9ebd1ec64.png)
 
 
 1. Speech Input (Recorded Audio of Team Conversation): The first stage involves collecting the recorded audio of the team conversation. This data serves as the primary input for the subsequent stages in the pipeline.
