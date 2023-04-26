@@ -1,0 +1,472 @@
+Okay, welcome to introductory calculus. I will start with some practical
+
+information, then I'll tell you a little bit about the syllabus and what we will
+
+cover in this course and then give you some examples of differential equations
+
+from physical sciences and then a little bit of integration towards the end. So
+
+for many of you this might be the easiest course here that you'll take in
+
+Oxford but I think things will get progressively harder so maybe in a couple
+
+of weeks it will be interesting to everybody if today's lecture might be a
+
+bit too easy for some of you. Okay, so let me tell you some practical information.
+
+So we have 16 lectures, the lecture notes are online. These are the lecture notes,
+
+these were written by Kat Wilkins, she taught this course for a few years until
+
+last year. So we'll just follow them. I guess I should have introduced myself at
+
+some point so the lecture, so you can call me Dan, my name is Dan Ciobotaru and we'll
+
+meet twice a week. Today is special just because it's the first week, we'll meet on
+
+Mondays and Wednesdays at 10 a.m. so not too early and you'll have eight problem
+
+sheets. So the first two problem sheets are online, the eight problem sheets
+
+you'll cover in four tutorials in your college. Okay, so four hours of tutorial.
+
+What do I, so I said the lecture notes are online, the reading list is also
+
+online, so see online. The book that I like is Mary Boas's mathematical methods in physical
+
+sciences, you know, this book. And most of your colleges should have a copy of this,
+
+if not the university does as well. So this book is quite concise and it has various examples
+
+from physics and engineering and so it also has the added advantage that if unlike the other books
+
+on the reading list, if you drop this one on your foot you might be able to walk without seeing an
+
+orthopedic surgeon. Alright, so that's any questions about this? Okay, now syllabus.
+
+So the first half of the course about seven or eight lectures will be devoted to differential
+
+equations. So this is about seven, eight lectures. So of two kinds, ordinary differential equations,
+
+or these, and partial differential equations, or PDEs. So I'll give you, I'll give you some examples
+
+very soon. We'll look at fairly easy examples of differential equations, we'll learn some
+
+techniques. It's a combination, solving them, it's a combination of science and art. You have to do
+
+some educated guesses at some point, but it's quite an interesting and very useful subject.
+
+And then after that we'll talk about line and double integrals, line integrals and double integrals.
+
+And the reason these are useful is because we will be able to compute arc lengths of curves and areas
+
+of various regions in the plane or surfaces. So this is maybe three lectures. And then finally
+
+we'll do calculus of functions in two variables. So this should be viewed as a gentle introduction
+
+into multivariable calculus. So among the things that we'll do, we'll look at various surfaces,
+
+gradients, normal vectors, we'll look at Taylor's theorem into variables, critical points, and a
+
+little bit of Lagrange multipliers which are useful for optimization problems. Okay, now there
+
+is a lot of interaction between this course and other prelim courses that you will take. So
+
+intro calculus will be directly useful in, well, obviously multivariable calculus as I said. In a
+
+way it's a little bit unfair. We set up the work, we do some examples in introduction calculus,
+
+but then the really cool results and theorems you prove in multivariable calculus. So we just do a
+
+little bit of the groundwork towards that. You also do, these are also useful in dynamics and in PDEs,
+
+you will do next term for yes series and PDEs. Now there is a lot of interaction between intro
+
+calculus and analysis, particularly analysis two, which is what you do next term. So there will be
+
+quite a few results from analysis that will just state and not prove, maybe prove some particular
+
+examples and so on. But real rigorous proofs you'll do in analysis next term, but then it all comes
+
+together when you revise for your exams in Trinity. Okay, so that's that. Of course in part A,
+
+there will be lots of applied mathematics options that will continue this. Differential equations
+
+is a big option, fluid and waves, etc. So this is a very useful course. It's also mandatory,
+
+so you have to be here. So now let me give you some examples of where all these might appear.
+
+Okay, so all these. So what is an ordinary differential equation? So this is an equation
+
+involving an independent variable. Let's call it x and a function of x, which we call it y,
+
+so y this would be the dependent variable and the derivatives of y with respect to x. So for example,
+
+dy dx, d squared y dx squared, etc. So the order of the highest derivative that occurs,
+
+we call that the order of the differential equation. So for example, the simplest kind
+
+of ODE would be something of the form dy dx equals some function in x. So dy dx equals f of x,
+
+you can solve that by direct integration. So this can be solved. So y equals, so y you can
+
+think of y as being the anti-derivative of f of x and then we can use integration. So that's the
+
+simplest kind of differential equation that we can have. And this is the reason why we'll start
+
+the course by reviewing a little bit of integration techniques. But more interesting, there could be
+
+more interesting differential equations. So let me give you some examples from physical sciences.
+
+So for example, from mechanics, this is something that you have all seen. You can have Newton's
+
+second law, which says that the force is the mass times the acceleration. So a is the acceleration.
+
+But then the acceleration is a derivative, is the derivative of the velocity with respect to time.
+
+So that's already a differential equation, but it could be a second order differential equation
+
+if you think that v is dr dt, where r is the displacement, then you get for example,
+
+a is dr d squared r dt squared, which is a second order differential equation. So that's an easy
+
+example of how differential equations appear in mechanics. Well, you could also have differential
+
+equations in engineering or if you have an electrical circuit. So if I take a simple one,
+
+so a simple series circuit, which for example, an RLC circuit, which means that it has the
+
+following components. It has R stands for resistor. So it has a resistor R. It has an inductor L,
+
+with inductance L. And it has a capacitor with capacitance C. And it has a source of
+
+voltage, something like a battery V. So here's, so I have a capacitor with C capacitance and a
+
+resistor with R resistance and an inductor with L inductance. So here R, R, L, and C are constants.
+
+They're independent of time. But then I'm interested, for example, in the current across
+
+the circuit. So this is the current across I of t is the current across the circuit,
+
+which is a function of the time. So in terms of differential equations, t, the time, would be the
+
+independent variable. And this I of t, for example, is a dependent variable. I can also
+
+have Q of t, which is the charge across the capacitor, sorry, on the capacitor. And the
+
+relation between the two of them is that I is dQ dt. So Kirchhoff's law says that the total
+
+voltage is zero around the circuit, which is, in another way, the voltage V from the battery,
+
+which is a function of t, equals the voltage across the resistor plus the voltage across
+
+the inductor plus the voltage on the capacitor. And now you write each one of them. The voltage
+
+across the resistor by Ohm's law is R times I of t. The one on the capacitor is just 1 over C times
+
+the charge. And for the inductor is L, the constant, times di dt, which is Faraday's law.
+
+So now I can express, for example, so I have an equation involving V, I, and Q. But I is dQ dt,
+
+so I can rewrite everything in terms of Q, for example. So I can get a differential equation in
+
+Q, which will be simply, so this would be the leading term, di dt. So L times di dt becomes
+
+L times d squared Q dt squared plus Ri is R times dQ dt plus 1 over C times Q equals V. So that is
+
+a second order differential equation that appears in electrical circuits. So it's second order
+
+because the highest derivative is of second order. It has constant coefficients because the constants
+
+L, R, and C are constant. And it's what we'll call inhomogeneous because this doesn't have to be zero.
+
+So those are the type of differential equations that we can study. And there are many other
+
+examples, so I'll leave one as an exercise for you, an easy exercise. So I'll tell you,
+
+the problem is the rate at which a radioactive substance decays is proportional
+
+to the remaining number of atoms. So I want you to, as an exercise, to write the differential
+
+equation that describes this situation. So we'll come back to things like this later.
+
+So the question is, what's the differential equation? Okay. So as you progress along in
+
+this course, in the mathematics course here, you will encounter very, very interesting and
+
+sophisticated differential equations in applied mathematics. So we're just scratching the surface a little bit.
+
+All right. Now going back to what I said before, the simplest kind of ODE is dy dx equals f of x,
+
+which you can solve by direct integration. So let me review a couple of facts about integration.
+
+So one of the most useful techniques, which I'm sure most of you are quite familiar with,
+
+is integration by parts. Okay. So where does integration by parts come from? Well,
+
+it comes from the product rule, product or Leibniz rule, if you want to sound fancy, for derivatives.
+
+So if I have two functions, f and g, and I multiply them and then I differentiate,
+
+and so f times g prime is f prime g plus f g prime, which means that f times g prime equals
+
+f times g prime minus f prime times g. And if I integrate both sides, then I end up with the integration by parts,
+
+which is f times g prime dx, if they're functions of x, equals f times g minus f prime times g dx.
+
+Okay. So this is the version, the indefinite integral's version. You can have a definite integral version
+
+where you put the limits of integration. So let me spell it out. So this is the definite
+
+integral's version. All right. So let's do a couple of examples. So the first example.
+
+So suppose I want to integrate x squared sine x dx. So this would solve, so this would give,
+
+this gives the solution to dy dx equals x squared sine x. Okay. So in integration by parts,
+
+you have to decide which one is f and which one's g. Now, clearly I would like to decrease the power
+
+here. I know I can never get rid of the sine by differentiation. So then maybe this, then I have to do this f and this is g prime,
+
+which means that g is minus cos x. So if I call this integral i, i is x squared times minus cos x,
+
+and then minus the derivative of f, which is 2x times minus cos x dx. This is minus x squared cos x plus 2 times x cos x dx.
+
+And now again, this should be f and this should be g prime, squared cos x plus 2 times x sine x minus 2 times sine x dx.
+
+So please try to follow through what I'm doing and let me know if I make a mistake. This is sort of, this is kind of my nightmare to do integrals like this while I'm being filmed.
+
+Right. This is not exactly what I like to do. So 2x sine x and then minus cos x, then plus c. Is this? So plus, plus, thank you. Good.
+
+As I said. So c here denotes a constant because we're doing indefinite integrals.
+
+Alright, let's do another example.
+
+So again, an indefinite integral 2x minus 1 times ln x squared plus 1 dx.
+
+What do you think? Which one should be f and which one should be g or g prime? Say that again.
+
+Say that again. Right. So this I want to differentiate to get rid of the logarithm. So I should call this f, which means that this is going to be g prime. Thank you.
+
+And that makes g x squared minus x. So this becomes x squared minus x times ln x squared plus 1 minus the integral of x squared minus x times the derivative of the natural log of x squared plus 1, which is 2x over x squared plus 1.
+
+dx. So I'm fine with this term. What do I do here? Good. So we do long division. So let's rewrite it. First this is x squared minus x ln x squared plus 1 and then minus 2x cubed minus x squared over x squared plus 1.
+
+dx. So I have to remember how to do long division. So I have x cubed minus x. Now, depending how you learn this, you will draw the long division in different ways. So you just do it your way and I'll do it my way.
+
+So that's x and then minus x cubed minus x. Then minus x squared minus x and that's minus 1.
+
+So this means that x cubed minus x squared over x squared plus 1 equals x minus 1 plus minus x plus 1 over x squared plus 1.
+
+Did you get the same thing? So let's call this integral j and now we compute j the integral of x minus 1 plus minus x plus 1 over x squared plus 1 dx,
+
+which equals x squared minus x squared minus x. And then how do I integrate this term, the fraction? So I should split x over x squared plus 1 dx.
+
+And let me write the last term plus dx over x squared plus 1. So this one, the last term, we should recognize that. What is it?
+
+So this is what we can substitute. Arc 10 or 10 inverse, depending how you want to denote it. This is arc 10 of x, which is 10 inverse of x.
+
+And what do we do with this? We can substitute. Yeah, let's do that so that we remember how to do substitutions.
+
+You might just look at it and know what it is, right? But just to review substitution, if I said u equals x squared plus 1, then du equals 2x, du dx equals 2x,
+
+which means that this is one half du over u, which is one half ln of u, which is one half ln of x squared plus 1.
+
+That you might have guessed just because you have enough practice, some of you.
+
+Okay, so now let's put them all together. So j is one half x squared minus x, minus one half ln x squared plus 1, plus 10 inverse of x and some constant,
+
+which means that the original integral, the integral in the beginning, which I should have called i so that I don't have to roll down the boards,
+
+but equals x squared minus x ln x squared plus 1, minus twice this. So minus x squared plus 2x plus ln x squared plus 1,
+
+minus 10 inverse x and then plus a c. Thank you. Any other mistakes? All right.
+
+Okay, so that's an integral. There are cases when integration by parts will not simplify either of the two functions f and g,
+
+but what happens is if you do it twice, then you sort of come back to what you started with. So the typical example is i equals the integral e to the x sine x dx.
+
+So maybe we don't need to go through the entire calculation. This is in the lecture notes as well. But how would you solve it?
+
+Right. So you do it, so for example, I can say that this is g prime and this is f and then I integrate, I get cos and then I do it again
+
+and I will end up with some expression minus this integral and then I solve for it. So you do this and you get the answer to be something like 1 half e to the x sine x minus cos x and then plus a constant.
+
+Okay. So another type of examples which are more difficult are the ones which you cannot solve in just one go, but you have to find the recursive formula.
+
+So I'll just do an example like that. You've seen other examples before. So this is when we get a reduction or if you want to call it a recursive formula.
+
+So I start, suppose I'm looking at this integral cosine to the n x dx. Now I want to label this integral i n because I'm going to get a formula of i n in terms of the
+
+i n minus 1 or i n minus 2, etc. Now there is not much choice here what you should call f and what you should call g. So I'm going to just do it. So this is cos n minus 1 x times cos x dx.
+
+So this is f and this is g prime. Then we get cos n minus 1 x sine x minus the integral. Now I need to differentiate f.
+
+So n minus 1 cos n minus 2 x and then minus sine x and then another sine x dx which equals cos n minus 1 x sine x dx.
+
+And then another sine x dx which equals cos n minus 1 x sine x minus n minus 1 times, or maybe I'll make it a plus, cos n minus 2 x sine squared x dx.
+
+So if I write it like that, what do you do now? You write sine squared as 1 minus cos squared x, which then gives you cos n minus 1 x sine x plus n minus 1, the integral of cos n minus 2 x dx.
+
+Minus n minus 1, the integral of cos n squared x dx. So now I recognize that this is the integral of cos n minus 2 is i sub n minus 2 and the integral of cos n, this is i n.
+
+So I have i n equals that. So if I solve for i n, we get i n equals, so I get n i n equals cos n minus 1 x sine x plus n minus 1 times cos n minus 2 x dx.
+
+I get i n minus 2, which gives me the recursive formula.
+
+So i n equals 1 over n cos n minus 1 x sine x plus n minus 1 over n i n minus 2. So this is true for all n greater than or equal to 2.
+
+Now if I want to know all of these integrals i n using this formula, what else do I need to know?
+
+I 0 and I 1 because it drops down by 2. So let's compute I 0 and I 1. So we also need I 0 and I 1.
+
+So I 0 would be just the integral dx, which is x plus a c. And I 1 is the integral of cos x dx, which is sine x plus c.
+
+And now with this you can get any integral you want. For example, if you want to get, I don't know, I 6,
+
+you just follow that and you get that it's 1 sixth cos to the fifth sine x plus 5 over 6 times i 4,
+
+which is 1 over 6 cos sine x plus 5 over 6 times i 4 is 1 fourth cos cubed x sine x plus 3 fourths i 2.
+
+Then what's i 2? i 2 is 1 half cos x sine x plus 1 half i 0, i 0 is x.
+
+So you substitute this in there and I get that i 6 is 1 sixth cos to the fifth x sine x plus 5 over 24 cos cubed x sine x plus
+
+5 times 3 times 1 over 6 times 4 times 2 cos x sine x plus 5 times 3 over 6 times 4 times 2 x plus c.
+
+Good. So it has, I think you can probably cook up a general formula using this example. You see how it goes.
+
+So if I ask you to write a sum involving all the terms, I think you can get the coefficients of each term inductively.
+
+Good. Okay, so this is a quick review of integration by parts.
+
+If you're not fully comfortable with these examples or similar examples, then get an integration textbook and do a few more examples with integration by parts,
+
+substitutions and so on. Because differential, what we will do in solving differential equations, we'll learn a lot of techniques,
+
+but ultimately you will have to integrate some functions. So you should be able to do that.
+
+So what we'll learn is how to reduce the problem to integrating various functions. But you'll have to be able to do that.
+
+Okay, so we discussed about the simplest kind of ODEs, which can be solved just by direct integration.
+
+The next simplest ODEs are the so-called separable ODEs.
+
+So we had the case dy dx equals f of x, which you can just integrate. The next case would be dy dx equals a of x times b of y.
+
+So what I mean by that is that this is a function only in x, only, and b of y is a function of y only.
+
+If you have a situation like that, then you can reduce it to the direct integration with one simple trick.
+
+If b y is not zero, then you divide by it and you get one over b of y dy dx equals ax.
+
+Now you can integrate just as we did before.
+
+So you'll get then the integral dx.
+
+So the left-hand side is the integral dy over b of y and the right-hand side is ax dx.
+
+And now you have two direct integrations, which hopefully we can solve.
+
+The type of integrals that we have in this course will be the kind for which you can apply integration by parts or some other techniques and solve them.
+
+If I were to write an arbitrary function there and ask you how to integrate it, then we can't do that in a closed formula.
+
+Okay, so here's an example.
+
+Find the general solution to the separable differential equation.
+
+So the hint is already in the problem that this is a separable differential equation.
+
+x times y squared minus 1 plus y x squared minus 1 dy dx equals to 0.
+
+And x is between 0 and 1 to avoid some issues about continuity or whatnot.
+
+How do you separate this differential equation? How do you separate the variables?
+
+Correct. So I think you're about two steps ahead of me.
+
+But it's correct. But let me do it step by step. So what I will do is first isolate that.
+
+So I have y x squared minus 1 dy dx equals minus x y squared minus 1.
+
+And then separate the variables. As the name suggests, you have y over y squared minus 1 dy dx equals minus x over x squared minus 1.
+
+Okay, what do we do now?
+
+Correct. So if we look at this, then so we integrate, let's integrate.
+
+Well, let me write one more. So we integrate this and we get y over y squared minus 1 dy equals minus x over x squared minus 1 dx.
+
+So now we could do substitution as we did before, but I think we know how to do it. This looks like the derivative of a logarithm.
+
+So if I differentiate ln of x squared minus 1, then I get 2x over x squared minus 1.
+
+So except x is between 0 and 1, so maybe it's better to write this as x over 1 minus x squared and get rid of the minus sign.
+
+So then I'll do 1 minus x squared minus 2x over 1 minus x squared. So then this is minus ln of 1 minus x squared.
+
+And a half and then plus a c.
+
+Whereas here I'll have to put absolute values because I don't know. It's 1 half ln over y squared minus 1 in absolute value.
+
+Now the easiest way to write this is to get rid of the logarithm by moving this to the other side using the properties of the logarithm and exponentiate.
+
+So let's do that. So we have 1 half. If I move the logarithm in x to the left hand side, then I use the property.
+
+Well, it doesn't matter much. Equals c.
+
+Which means that the equation will be y squared minus 1 times 1 minus x squared.
+
+Absolute value equals, it would be e to c squared.
+
+Or e to 2c, which I can just call another kind of c.
+
+And this would be a positive number.
+
+So the equation that we get is, so the answer then is that.
+
+So I can write the answer in a nicer form by dropping the absolute value and requiring and dropping the assumption on c.
+
+So another way of doing this is, well for uniformity I'll write it as 1 minus y squared equals c.
+
+So 1 minus y squared times 1 minus x squared equals c.
+
+No assumption on c except, so c could be both positive or negative, except in this formula it looks like it can't be 0.
+
+Right? Because here I got an exponential which is never 0. So this is positive.
+
+I drop the absolute value and the cost is that now c can also be negative.
+
+But somehow 0 is missing. How is that possible? That doesn't look like solid mathematics.
+
+Yes?
+
+That's right. Okay, so where did I lose that case?
+
+Right here. So I divided by y squared minus 1. I did that ignoring the case when y squared minus 1 is 0.
+
+So let's call this star here. So in star y squared minus 1 is not 0.
+
+But if we need to allow that, because it is possible for y to be plus or minus 1, for example.
+
+If y is the constant function 1, then this is 0, dy dx is 0, so that's okay.
+
+So if y is plus or minus 1, it is included in the solution if we allow c to be 0.
+
+In the answer.
+
+So then the bottom line is that the answer is this implicit equation in y and x where c can be any constant.
+
+Good?
+
+So be careful when you divide by the function in y.
+
+As I said here, you can do that if you know that's not 0.
+
+But sometimes you get solutions from it being 0, so you have to be careful there.
+
+All right, that's the end of the first lecture.
+
+I'll see you tomorrow for the second lecture and we'll do more differential equations.
+
